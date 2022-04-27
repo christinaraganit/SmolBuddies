@@ -1,6 +1,13 @@
 @use "./header";
 @use "./footer";
+@use "./pixel-button";
+
+@font-face {
+    font-family: 'Minecraftia Regular';
+    src: url("./res/Minecraftia-Regular.ttf");
+}
 
 body {
     margin: 0;
+    font-family: 'Minecraftia Regular';
 }
