@@ -1,8 +1,14 @@
 .pixel-button {
-    padding-top: 10px;
+    padding-top: 28px;
+    padding-bottom: 16px;
     font-family: 'Minecraftia Regular';
     text-transform: uppercase;
-    background: url("./res/connect-button.png");
-    background-size: 100%;
+    background: url("./res/contact-button-small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
+    font-size: 16px;
+    color: #D4D7F4;
+    letter-spacing: 0.15em;
 }

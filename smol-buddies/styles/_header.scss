@@ -4,6 +4,8 @@
     height: 5vh;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    width: 100%;
     align-items: center;
 
     .header-logo {
@@ -16,7 +18,7 @@
     }
 
     .header-navigation {
-        width: 90vw;
+        width: calc(100% - 10vw - 20px - 20px);
         display: flex;
         justify-content: flex-end;
 
@@ -37,7 +39,7 @@
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
-        transition: 0.5s;
+        transition: 0.2s;
         padding-top: 100px;
       }
 
@@ -50,6 +52,10 @@
         letter-spacing: 0.15em;
       }
       
+      .sidenav a:last-of-type {
+        padding-bottom: 10px;
+      }
+
       .sidenav a:hover {
         color: #f1f1f1;
       }
@@ -63,6 +69,5 @@
       }
 
       .pixel-button {
-        margin: 0 32vw;
       }
 }

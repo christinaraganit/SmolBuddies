@@ -1,13 +1,22 @@
 @use "./header";
 @use "./footer";
 @use "./pixel-button";
+@use "./title";
+@use "./content";
 
 @font-face {
     font-family: 'Minecraftia Regular';
     src: url("./res/Minecraftia-Regular.ttf");
 }
 
+@font-face {
+    font-family: '04B';
+    src: url("./res/04B.TTF");
+}
+
 body {
     margin: 0;
+    background-color: #0A0D2F;
     font-family: 'Minecraftia Regular';
+    color: #FFF;
 }

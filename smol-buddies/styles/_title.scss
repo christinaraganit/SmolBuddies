@@ -1,0 +1,50 @@
+.title-container {
+    background-color: #0A0D2F;
+    padding-top: 10vh;
+    text-align: center;
+    display: flex;
+    height: calc(100vh - 5vh);
+    flex-direction: column;
+    align-content: stretch;
+
+    .title-headings {
+        padding: 20px;
+        height: fit-content;
+
+        .title-large {
+            font-family: '04b';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 120%;
+            padding-bottom: 20px;
+        }
+
+        .title-smol {
+            font-size: 14px;
+        }
+    }
+
+    .title-image {
+        text-align: center;
+        height: calc(100vh - 5vh);
+        background: linear-gradient(180deg, rgba(11, 31, 69, 0) 57.29%, #0B1F45 100%), url("./res/monke-city.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .primary-button {
+            background-image: url("./res/primary-button.png");
+            padding-top: 24px;
+            padding-bottom: -20px;
+            height: 80px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.15em;
+        }
+    }
+}

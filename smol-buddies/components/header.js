@@ -36,7 +36,7 @@ export default function Header() {
         <a href="#">Minecraft</a>
         <a href="#">Discord</a>
         <a href="#">Twitter</a>
-        <PixelButton text="hewwo"></PixelButton>
+        <PixelButton text="connect"></PixelButton>
       </div>
     </div>
   );
