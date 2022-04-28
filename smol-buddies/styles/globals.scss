@@ -4,6 +4,8 @@
 @use "./title";
 @use "./content";
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @font-face {
     font-family: 'Minecraftia Regular';
     src: url("./res/Minecraftia-Regular.ttf");
@@ -17,6 +19,6 @@
 body {
     margin: 0;
     background-color: #0A0D2F;
-    font-family: 'Minecraftia Regular';
+    font-family: 'Fira Code';
     color: #FFF;
 }

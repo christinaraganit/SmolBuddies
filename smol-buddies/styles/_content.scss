@@ -1,7 +1,7 @@
 .content-container {
     background: linear-gradient(180deg, #0B1F45 0%, #20093B 100%);
 
-    div {
+    .be-a-buddy-container, .why-free-mint-container, .faq-container, .meet-the-team-container {
         padding: 20px;
 
         .heading {
@@ -12,22 +12,132 @@
             line-height: 120%;
             padding-bottom: 20px;
             text-transform: lowercase;
+            margin-bottom: 20px;;
+        }
+
+        .subheading {
+            font-family: 'Minecraftia Regular';
+            line-height: 26px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
         }
     }
 
     .be-a-buddy-container {
+        margin-bottom: 20px;
 
+        .be-a-buddy-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: 'Minecraftia Regular';
+
+            .be-a-buddy-column {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    background-size: cover;
+                    margin-bottom: 10px;
+                }
+
+                .buddy1 {
+                    background-image: url("./res/angelic-buddy.png");
+                }
+
+                .buddy2 {
+                    background-image: url("./res/open-helm-buddy.png");
+                }
+
+                .buddy3 {
+                    background-image:url("./res/cyber-buddy.png")
+                }
+
+                .buddy4 {
+                    background-image: url("./res/astral-suit-buddy.png");
+                }
+            }
+        }
     }
 
     .why-free-mint-container {
+        margin-bottom: 20px;
 
+        .why-free-mint-row {
+            padding-bottom: 10px;
+            .why-free-mint-column {
+                img {
+                    width: 100%;
+                    background-size: cover;
+                    margin-bottom: 10px;
+                }
+
+                .buddy1 {
+                    background-image: url("./res/angelic-buddy.png");
+                }
+
+                .buddy2 {
+                    background-image: url("./res/open-helm-buddy.png");
+                }
+
+                .buddy3 {
+                    background-image:url("./res/cyber-buddy.png")
+                }
+
+                .buddy4 {
+                    background-image: url("./res/astral-suit-buddy.png");
+                }
+                div {
+                    p {
+                        line-height: 175%;
+                    }
+                }
+            }
+        }
     }
 
     .faq-container {
+        margin-bottom: 20px;
 
     }
 
     .meet-the-team-container {
-        
+        .meet-the-team-content {
+            text-align: center;
+
+            .meet-the-team-column { 
+                img {
+                    width: 100%;
+                    background-size: cover;
+                    margin-bottom: 10px;
+                }
+
+                .buddy1 {
+                    background-image: url("./res/angelic-buddy.png");
+                }
+
+                .buddy2 {
+                    background-image: url("./res/open-helm-buddy.png");
+                }
+
+                .buddy3 {
+                    background-image:url("./res/cyber-buddy.png")
+                }
+
+                .buddy4 {
+                    background-image: url("./res/astral-suit-buddy.png");
+                }
+
+                .name {
+                    font-family: "Minecraftia Regular";
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                }
+
+                .title {
+                    margin-bottom: 40px;
+                }
+            }
+        }
     }
 }

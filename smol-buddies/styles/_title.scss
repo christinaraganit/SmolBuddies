@@ -20,7 +20,7 @@
         }
 
         .title-smol {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
@@ -34,8 +34,8 @@
 
         .primary-button {
             background-image: url("./res/primary-button.png");
-            padding-top: 24px;
-            padding-bottom: -20px;
+            padding-top: 64px;
+            padding-left: 4px;
             height: 80px;
             background-size: contain;
             background-position: center;
@@ -45,6 +45,7 @@
             align-items: center;
             justify-content: center;
             letter-spacing: 0.15em;
+            font-family: 'Minecraftia Regular';
         }
     }
 }
