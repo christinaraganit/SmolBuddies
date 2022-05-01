@@ -1,11 +1,12 @@
 .header {
     padding: 20px;
-    background: linear-gradient(180deg, #0A0D2F 0%, rgba(10, 13, 47, 0.161458) 84.37%, rgba(10, 13, 47, 0) 100%);
+    background-color: #0A0D2F;
     height: 5vh;
     display: flex;
     flex-direction: row;
     position: fixed;
     width: 100%;
+    z-index: 999;
     align-items: center;
     font-family: 'Minecraftia Regular';
 
@@ -25,6 +26,37 @@
 
         .header-button {
             color: #fff;
+            display: none;
+        }
+
+        .header-links {
+          display: flex;
+          align-items: center;
+          margin-bottom: -20px;
+          gap: 20px;
+          
+          a {
+            text-decoration: none;
+            font-size: small;
+            color: #fff;
+          }
+
+          button {
+            font-size: small;
+            font-family: 'Minecraftia Regular';
+            padding: 10px;
+            color: #000;
+            padding-bottom: 0px;
+          }
+
+          .pixel-box--primary {
+            border-color: #017C91;
+            background-color: #03B4D2;
+        }
+
+          .pixel-box--primary::after {
+            box-shadow: inset -4px -4px #029CB8;
+        }
         }
     }
 
@@ -32,7 +64,7 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
         top: 0;
         text-align: center;
         right: 0;
@@ -71,4 +103,20 @@
 
       .pixel-button {
       }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 5vh;
+
+    .header-navigation {
+      .header-links {
+        display: none;
+      }
+
+      .header-button {
+        display: block;
+      }
+    }
+  }
 }

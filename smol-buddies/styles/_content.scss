@@ -99,6 +99,24 @@
     .faq-container {
         margin-bottom: 20px;
 
+        .faq-content {
+            width: 100%;
+
+            .pixel-borders {
+                width: calc(100% - 40px - 10px);
+                font-family: 'Fira Code';
+                color: #000;
+            }
+
+            .pixel-box--primary {
+                border-color: #017C91;
+                background-color: #03B4D2;
+            }
+
+            .pixel-box--primary::after {
+                box-shadow: inset -4px -4px #029CB8;
+            }
+        }
     }
 
     .meet-the-team-container {
@@ -136,6 +154,108 @@
 
                 .title {
                     margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+
+        .footer-links {
+            display: flex;
+            gap: 10px;
+            width: 50%;
+        }
+
+        .footer-text {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content-container {
+        .why-free-mint-container {
+            .why-free-mint-row {
+                .why-free-mint-text {
+                    width: 80% !important;
+                }
+
+                .why-free-mint-img {
+                    width: 20% !important;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content-container {
+        .be-a-buddy-container, .why-free-mint-container, .faq-container, .meet-the-team-container {
+            padding: 40px;
+            margin-bottom: 0;
+
+            .heading {
+                font-size: 32px;
+            }
+
+            .subheading {
+                
+            }
+        }
+
+        .be-a-buddy-container {
+            .be-a-buddy-content {
+                flex-direction: row;
+                gap: 40px;
+            }
+        }
+
+        .why-free-mint-container {
+            .why-free-mint-row {
+                display: flex;
+                margin-bottom: 20px;
+                align-items: center;
+                flex-direction: row;
+                gap: 40px; 
+
+                .why-free-mint-text {
+                    width: 60%;
+                }
+
+                .why-free-mint-img {
+                    width: 40%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .row2 {
+                flex-direction: row-reverse;
+                margin-bottom: 0;
+            }
+        }
+
+        .meet-the-team-container {
+            .meet-the-team-content {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+
+                .meet-the-team-column {
+                    width: calc(100% / 4);
                 }
             }
         }

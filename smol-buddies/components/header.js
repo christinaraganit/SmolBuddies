@@ -17,7 +17,14 @@ export default function Header() {
         <img src="/monke.png"></img>
       </div>
       <div className="header-navigation">
-        <div className="header-links"></div>
+        <div className="header-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Minecraft</a>
+          <a href="#">Discord</a>
+          <a href="#">Twitter</a>
+          <button className="pixel-borders pixel-box--primary">Connect</button>
+        </div>
         <div className="header-button">
           <HiMenuAlt3 color="#D4D7F4" size={32} onClick={openNav}></HiMenuAlt3>
         </div>

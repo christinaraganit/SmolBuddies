@@ -1,13 +1,15 @@
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="header-logo">
-        <img src="/monke.svg"></img>
+      <div className="footer-links">
+        <AiOutlineTwitter></AiOutlineTwitter>
+        <FaDiscord></FaDiscord>
       </div>
-      <div className="header-navigation">
-        <div className="header-links"></div>
-        <div className="header-button"></div>
-      </div>
+
+      <div className="footer-text">© SMOL BUDDIES, 2022</div>
     </div>
   );
 }

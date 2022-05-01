@@ -1,3 +1,8 @@
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
+
+var year = new Date();
+
 export default function Content() {
   return (
     <div className="content-container">
@@ -28,7 +33,7 @@ export default function Content() {
       <div className="why-free-mint-container">
         <div className="heading">Why a Free mint?</div>
         <div className="why-free-mint-row">
-          <div className="why-free-mint-column">
+          <div className="why-free-mint-column why-free-mint-text">
             <div className="subheading">RAISING MONEY</div>
             <div>
               <p>
@@ -50,13 +55,13 @@ export default function Content() {
               </p>
             </div>
           </div>
-          <div className="why-free-mint-column">
+          <div className="why-free-mint-column why-free-mint-img">
             <img className="buddy4" src="./border.png"></img>
           </div>
         </div>
 
-        <div className="why-free-mint-row">
-          <div className="why-free-mint-column">
+        <div className="why-free-mint-row row2">
+          <div className="why-free-mint-column why-free-mint-text">
             <div className="subheading">BUILDING TRUST</div>
             <div>
               <p>
@@ -73,7 +78,7 @@ export default function Content() {
               </p>
             </div>
           </div>
-          <div className="why-free-mint-column">
+          <div className="why-free-mint-column why-free-mint-img">
             <img className="buddy3" src="./border.png"></img>
           </div>
         </div>
@@ -81,6 +86,55 @@ export default function Content() {
 
       <div className="faq-container">
         <div className="heading">Frequently asked questions</div>
+        <div className="faq-content">
+          <div class="pixel-borders pixel-box--primary">
+            <div className="subheading">MAYO</div>
+            <div className="body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
+              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
+              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
+              Duis semper leo non velit egestas, vitae malesuada lectus
+              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
+              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
+              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
+              nibh, et rutrum metus gravida ac. In hac habitasse platea
+              dictumst. Proin vitae tristique mauris.
+            </div>
+          </div>
+
+          <div class="pixel-borders pixel-box--primary">
+            <div className="subheading">MAYO</div>
+            <div className="body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
+              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
+              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
+              Duis semper leo non velit egestas, vitae malesuada lectus
+              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
+              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
+              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
+              nibh, et rutrum metus gravida ac. In hac habitasse platea
+              dictumst. Proin vitae tristique mauris.
+            </div>
+          </div>
+
+          <div class="pixel-borders pixel-box--primary">
+            <div className="subheading">MAYO</div>
+            <div className="body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
+              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
+              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
+              Duis semper leo non velit egestas, vitae malesuada lectus
+              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
+              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
+              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
+              nibh, et rutrum metus gravida ac. In hac habitasse platea
+              dictumst. Proin vitae tristique mauris.
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="meet-the-team-container">
@@ -110,6 +164,15 @@ export default function Content() {
             <div className="title">Bubble tea drinker</div>
           </div>
         </div>
+      </div>
+
+      <div className="footer">
+        <div className="footer-links">
+          <AiOutlineTwitter size={24}></AiOutlineTwitter>
+          <FaDiscord size={24}></FaDiscord>
+        </div>
+
+        <div className="footer-text">© SMOL BUDDIES, {year.getFullYear()}</div>
       </div>
     </div>
   );
