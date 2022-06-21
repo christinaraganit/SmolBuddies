@@ -88,50 +88,36 @@ export default function Content() {
         <div className="heading">Frequently asked questions</div>
         <div className="faq-content">
           <div class="pixel-borders pixel-box--primary">
-            <div className="subheading">MAYO</div>
+            <div className="subheading">WHAT IS BUDDY WORLD?</div>
             <div className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
-              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
-              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
-              Duis semper leo non velit egestas, vitae malesuada lectus
-              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
-              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
-              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
-              nibh, et rutrum metus gravida ac. In hac habitasse platea
-              dictumst. Proin vitae tristique mauris.
+              BuddyWorld is a Minecraft server with a RPG play-style. Both free
+              players and token holders can play together. Host events, go on
+              quests, raids, harvest, story-tell, together. Find your
+              profression and start building your story. BuddyWorld will have
+              seamless integrations for all projects to add quests, cities,
+              items, etc.
             </div>
           </div>
 
           <div class="pixel-borders pixel-box--primary">
-            <div className="subheading">MAYO</div>
+            <div className="subheading">HOW DOES CUSTOMIZATION WORK?</div>
             <div className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
-              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
-              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
-              Duis semper leo non velit egestas, vitae malesuada lectus
-              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
-              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
-              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
-              nibh, et rutrum metus gravida ac. In hac habitasse platea
-              dictumst. Proin vitae tristique mauris.
+              Smol Buddies are customizable NFT's that can mixed and matched
+              through changing head, body, and bottom accessories Get new
+              accessories through playing in-game, or staking your Buddy for
+              $BUDCOIN to open lootboxes to unlock new items. You can even
+              dismantle accessories and craft new items and lootboxes.
             </div>
           </div>
 
           <div class="pixel-borders pixel-box--primary">
-            <div className="subheading">MAYO</div>
+            <div className="subheading">HOW DOES STAKING WORK?</div>
             <div className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              sit amet erat turpis. Phasellus nibh justo, maximus auctor erat
-              vitae, porta dapibus eros. Integer ultrices erat nibh, vitae
-              egestas massa vehicula vel. In tincidunt pretium risus ac mollis.
-              Duis semper leo non velit egestas, vitae malesuada lectus
-              consectetur. Vivamus vestibulum viverra mauris. Nam tristique
-              molestie nisl, a lacinia odio rutrum ac. Aliquam erat volutpat.
-              Aenean gravida luctus erat id eleifend. Quisque hendrerit erat
-              nibh, et rutrum metus gravida ac. In hac habitasse platea
-              dictumst. Proin vitae tristique mauris.
+              Smol Buddies are able to be staked for those who can't vest to
+              time required to play. Furthermore, for every Buddy you hold (max
+              8) you will recieve a corresponding staking multiplier. Use your
+              earned $BUDCOIN to purchase in-game land, assets, items, or unlock
+              new accessories for your Buddies!
             </div>
           </div>
         </div>
@@ -142,26 +128,44 @@ export default function Content() {
         <div className="meet-the-team-content">
           <div className="meet-the-team-column">
             <img className="buddy3" src="./border.png"></img>
-            <div className="name">Name name</div>
-            <div className="title">Bubble tea drinker</div>
+            <div className="name">Ghosthunt</div>
+            <div className="title">Artist</div>
           </div>
 
           <div className="meet-the-team-column">
             <img className="buddy2" src="./border.png"></img>
-            <div className="name">Name name</div>
-            <div className="title">Bubble tea drinker</div>
+            <div className="name">Pedram</div>
+            <div className="title">Artist</div>
           </div>
 
           <div className="meet-the-team-column">
             <img className="buddy4" src="./border.png"></img>
-            <div className="name">Name name</div>
-            <div className="title">Bubble tea drinker</div>
+            <div className="name">Samrath</div>
+            <div className="title">Tech Lead</div>
           </div>
 
           <div className="meet-the-team-column">
             <img className="buddy1" src="./border.png"></img>
-            <div className="name">Name name</div>
-            <div className="title">Bubble tea drinker</div>
+            <div className="name">TreeDeez</div>
+            <div className="title">Smart Contract and General Developer</div>
+          </div>
+
+          <div className="meet-the-team-column">
+            <img className="buddy1" src="./border.png"></img>
+            <div className="name">Donauts</div>
+            <div className="title">Project Manager</div>
+          </div>
+
+          <div className="meet-the-team-column">
+            <img className="buddy1" src="./border.png"></img>
+            <div className="name">Owrange</div>
+            <div className="title">Community Manager</div>
+          </div>
+
+          <div className="meet-the-team-column">
+            <img className="buddy1" src="./border.png"></img>
+            <div className="name">Astris</div>
+            <div className="title">Web Developer</div>
           </div>
         </div>
       </div>
