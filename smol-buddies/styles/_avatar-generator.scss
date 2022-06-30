@@ -1,0 +1,39 @@
+.generator-container {
+    padding: 20px;
+
+    .avatar {
+        width: 295px;
+        height: 295px;
+    }
+
+    .avatar-options-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .selected {
+            background-color: #AE96C4;
+        }
+        div {
+            height: 51px;
+            width: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5E2E89;
+            border-radius: 12px;
+        }
+    }
+    
+    .avatar-options {
+        .options {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            justify-items: center;
+            .option-div {
+                width: 67px;
+                height: 67px;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ export default function Title() {
       <div className="title-headings">
         <div className="title-large">MORE THAN JUST CUSTOMIZABLE NFTs</div>
         <div className="title-smol">
-          Smol Buddies wants to push the boundaries of NFT's to provide users
+          Smol Buddies wants to push the boundaries of NFT&apos;s to provide users
           the ability to recreate their own NFT.
         </div>
       </div>

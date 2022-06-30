@@ -30,7 +30,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div id="mobile-sidenav" class="sidenav">
+      <div id="mobile-sidenav" className="sidenav">
         <HiX
           className="closebtn"
           onClick={closeNav}

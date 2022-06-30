@@ -37,7 +37,7 @@ export default function Content() {
             <div className="subheading">RAISING MONEY</div>
             <div>
               <p>
-                In NFT's some of the best and honest communities are through
+                In NFT&apos;s some of the best and honest communities are through
                 free mints. Some of such are Smol Brains, Critterz, NFT Worlds,
                 BattleFly, Crypto Punks, and so on. We plan on generating our
                 project funds through the secondary marketplace, where we will
@@ -67,7 +67,7 @@ export default function Content() {
               <p>
                 Many projects will charge a mint fee, acquiring tons of cash,
                 then leaving the community to worry about their money. Often
-                poorly updating their community, most of the time it's just poor
+                poorly updating their community, most of the time it&apos;s just poor
                 communication.
               </p>
               <p>
@@ -87,7 +87,7 @@ export default function Content() {
       <div className="faq-container">
         <div className="heading">Frequently asked questions</div>
         <div className="faq-content">
-          <div class="pixel-borders pixel-box--primary">
+          <div className="pixel-borders pixel-box--primary">
             <div className="subheading">WHAT IS BUDDY WORLD?</div>
             <div className="body">
               BuddyWorld is a Minecraft server with a RPG play-style. Both free
@@ -99,10 +99,10 @@ export default function Content() {
             </div>
           </div>
 
-          <div class="pixel-borders pixel-box--primary">
+          <div className="pixel-borders pixel-box--primary">
             <div className="subheading">HOW DOES CUSTOMIZATION WORK?</div>
             <div className="body">
-              Smol Buddies are customizable NFT's that can mixed and matched
+              Smol Buddies are customizable NFT&apos;s that can mixed and matched
               through changing head, body, and bottom accessories Get new
               accessories through playing in-game, or staking your Buddy for
               $BUDCOIN to open lootboxes to unlock new items. You can even
@@ -110,10 +110,10 @@ export default function Content() {
             </div>
           </div>
 
-          <div class="pixel-borders pixel-box--primary">
+          <div className="pixel-borders pixel-box--primary">
             <div className="subheading">HOW DOES STAKING WORK?</div>
             <div className="body">
-              Smol Buddies are able to be staked for those who can't vest to
+              Smol Buddies are able to be staked for those who can&apos;t vest to
               time required to play. Furthermore, for every Buddy you hold (max
               8) you will recieve a corresponding staking multiplier. Use your
               earned $BUDCOIN to purchase in-game land, assets, items, or unlock
