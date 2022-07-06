@@ -17,8 +17,8 @@ const shirts = [muscleBody];
 const pants = [legs];
 
 export default function AvatarGenerator() {
-    const [option, setOption] = new useState("color");
-    const [listOfOptions, setListOfOptions] = new useState(backgrounds);
+    const [option, setOption] = new useState("COLOR");
+    const [listOfOptions, setListOfOptions] = new useState(monkes);
     
     const setSelection = (e, choice) => {
         const isSelected = e.currentTarget.className === 'selected';
@@ -29,15 +29,15 @@ export default function AvatarGenerator() {
                 divs[i].classList.remove('selected');
             }
             e.currentTarget.className = 'selected';
-            if (choice === 'color') {
+            if (choice === 'COLOR') {
                 setListOfOptions(monkes);
-            } else if (choice === 'background') {
+            } else if (choice === 'BACKGROUND') {
                 setListOfOptions(backgrounds);
-            } else if (choice === 'hat') {
+            } else if (choice === 'HAT') {
                 setListOfOptions(hats);
-            } else if (choice === 'shirt') {
+            } else if (choice === 'SHIRT') {
                 setListOfOptions(shirts);
-            } else if (choice === 'pants') {
+            } else if (choice === 'PANTS') {
                 setListOfOptions(pants);
             }
         }
@@ -45,30 +45,30 @@ export default function AvatarGenerator() {
 
     const changeAvatar = (e) => {
         const selected = e.currentTarget.style.backgroundImage;
-        if (option === 'color') {
+        if (option === 'COLOR') {
             const color = document.getElementById("color");
             color.style.backgroundImage = selected;
             color.style.backgroundSize = "contain";
             color.style.backgroundRepeat = "no-repeat";
             color.style.backgroundPosition = "center";
-        } else if (option === "background") {
+        } else if (option === "BACKGROUND") {
             const avatar = document.getElementById("avatar");
             avatar.style.backgroundImage = selected;
             avatar.style.backgroundSize = "cover";
             avatar.style.backgroundRepeat = "no-repeat";
-        } else if (option === "hat") {
+        } else if (option === "HAT") {
             const hat = document.getElementById("hat");
             hat.style.backgroundImage = selected;
             hat.style.backgroundSize = "contain";
             hat.style.backgroundRepeat = "no-repeat";
             hat.style.backgroundPosition = "center";
-        } else if (option === "shirt") {
+        } else if (option === "SHIRT") {
             const shirt = document.getElementById("shirt");
             shirt.style.backgroundImage = selected;
             shirt.style.backgroundSize = "contain";
             shirt.style.backgroundRepeat = "no-repeat";
             shirt.style.backgroundPosition = "center";
-        } else if (option === "pants") {
+        } else if (option === "PANTS") {
             const pants = document.getElementById("pants");
             pants.style.backgroundImage = selected;
             pants.style.backgroundSize = "contain";
@@ -86,24 +86,24 @@ export default function AvatarGenerator() {
                 <div id="pants"></div>
             </div>
             <div className="avatar-options-select">
-                <div className='selected' onClick={e => setSelection(e, "color")}>
+                <div className='selected' onClick={e => setSelection(e, "COLOR")}>
                     <IoColorPaletteSharp size={24}></IoColorPaletteSharp>
                 </div>
-                <div onClick={e => setSelection(e, "background")}>
+                <div onClick={e => setSelection(e, "BACKGROUND")}>
                     <IoImageSharp size={24}></IoImageSharp>
                 </div>
-                <div onClick={e => setSelection(e, "hat")}>
+                <div onClick={e => setSelection(e, "HAT")}>
                     <GiTopHat size={24}></GiTopHat>
                 </div>
-                <div onClick={e => setSelection(e, "shirt")}>
+                <div onClick={e => setSelection(e, "SHIRT")}>
                     <IoShirtSharp size={24}></IoShirtSharp>
                 </div>
-                <div onClick={e => setSelection(e, "pants")}>
+                <div onClick={e => setSelection(e, "PANTS")}>
                     <GiUnderwearShorts size={24}></GiUnderwearShorts>
                 </div>
             </div>
             <div className="avatar-options">
-                <h3>ABOUT</h3>
+                <h3>{option}</h3>
                 <div className='options'>
                     {listOfOptions.map(photo => {
                         return <div key={photo.src} className='option-div' style={{

@@ -1,7 +1,10 @@
 .generator-container {
     padding: 20px;
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(180deg, #0B1F45 0%, #20093B 100%);
     #avatar {
         width: 295px;
         height: 295px;
@@ -40,7 +43,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-
+        width: 100%;
         .selected {
             background-color: #AE96C4;
         }
@@ -52,10 +55,17 @@
             justify-content: center;
             background-color: #5E2E89;
             border-radius: 12px;
+            cursor: pointer;
         }
     }
     
     .avatar-options {
+        width: 100%;
+        text-align: center;
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
         .options {
             display: grid;
             grid-template-columns: repeat(4, 25%);
@@ -65,5 +75,23 @@
                 height: 67px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .generator-container {
+        padding: 2.5vw 10vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .generator-container {
+        padding: 2.5vw 20vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .generator-container {
+        padding: 2.5vw 30vw;
     }
 }
