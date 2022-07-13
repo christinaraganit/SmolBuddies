@@ -1,0 +1,97 @@
+.generator-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(180deg, #0B1F45 0%, #20093B 100%);
+    #avatar {
+        width: 295px;
+        height: 295px;
+        display: grid;
+        grid-template-rows: 25% 20% 30% 25%;
+
+        #hat {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: 1;
+            z-index: 2;
+        }
+
+        #color {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            z-index: 1;
+            grid-column: 1;
+        }
+
+        #shirt {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column: 1;
+            z-index: 2;
+        }
+        #pants {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column: 1;
+            z-index: 2;
+        }
+    }
+
+    .avatar-options-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        .selected {
+            background-color: #AE96C4;
+        }
+        div {
+            height: 51px;
+            width: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5E2E89;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    }
+    
+    .avatar-options {
+        width: 100%;
+        text-align: center;
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            justify-items: center;
+            .option-div {
+                width: 67px;
+                height: 67px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .generator-container {
+        padding: 2.5vw 10vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .generator-container {
+        padding: 2.5vw 20vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .generator-container {
+        padding: 2.5vw 30vw;
+    }
+}

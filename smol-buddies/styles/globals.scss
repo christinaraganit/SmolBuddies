@@ -3,6 +3,7 @@
 @use "./pixel-button";
 @use "./title";
 @use "./content";
+@use "./avatar-generator";
 
 @import "../node_modules/pixel-borders/src/styles/pixel-borders.scss";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');

@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Title from "../components/title";
 import Content from "../components/content";
+import AvatarGenerator from "../components/avatar-generator";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Header></Header>
       <Title></Title>
       <Content></Content>
+      <AvatarGenerator></AvatarGenerator>
     </div>
   );
 }
