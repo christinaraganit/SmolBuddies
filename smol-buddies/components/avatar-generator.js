@@ -4,22 +4,13 @@ import { GiTopHat, GiUnderwearShorts } from 'react-icons/gi';
 
 import pixelBackground1 from '../public/pixel_background_1.png';
 import pixelBackground2 from '../public/pixel_background_2.png';
-import pixelHat1 from '../public/pixel_hat_1.png';
-import pixelHat2 from '../public/pixel_hat_2.png';
-import monke from '../public/monke.png';
-import muscleBody from '../public/muscle_body.png';
-import legs from '../public/legs.png';
-
 const backgrounds = [pixelBackground1, pixelBackground2];
-const hats = [pixelHat1, pixelHat2];
-const monkes = [monke];
-const shirts = [muscleBody];
-const pants = [legs];
+
+import { headgear, monkes, torso } from './avatar-images';
 
 export default function AvatarGenerator() {
     const [option, setOption] = new useState("COLOR");
     const [listOfOptions, setListOfOptions] = new useState(monkes);
-    
     const setSelection = (e, choice) => {
         const isSelected = e.currentTarget.className === 'selected';
         if (!isSelected) {
@@ -34,56 +25,58 @@ export default function AvatarGenerator() {
             } else if (choice === 'BACKGROUND') {
                 setListOfOptions(backgrounds);
             } else if (choice === 'HAT') {
-                setListOfOptions(hats);
+                setListOfOptions(headgear);
             } else if (choice === 'SHIRT') {
-                setListOfOptions(shirts);
+                setListOfOptions(torso);
             } else if (choice === 'PANTS') {
                 setListOfOptions(pants);
             }
         }
     }
 
-    const changeAvatar = (e) => {
-        const selected = e.currentTarget.style.backgroundImage;
+    const changeAvatar = (e, source) => {
+        const selected = source;
         if (option === 'COLOR') {
-            const color = document.getElementById("color");
-            color.style.backgroundImage = selected;
-            color.style.backgroundSize = "contain";
-            color.style.backgroundRepeat = "no-repeat";
-            color.style.backgroundPosition = "center";
+            const color = document.getElementById("color").firstChild;
+            color.src = selected;
         } else if (option === "BACKGROUND") {
             const avatar = document.getElementById("avatar");
-            avatar.style.backgroundImage = selected;
+            avatar.style.backgroundImage = `url(${selected})`;
             avatar.style.backgroundSize = "cover";
             avatar.style.backgroundRepeat = "no-repeat";
+            avatar.style.backgroundPosition = "center";
         } else if (option === "HAT") {
-            const hat = document.getElementById("hat");
-            hat.style.backgroundImage = selected;
-            hat.style.backgroundSize = "contain";
-            hat.style.backgroundRepeat = "no-repeat";
-            hat.style.backgroundPosition = "center";
+            const hat = document.getElementById("hat").firstChild;
+            hat.src = selected;
         } else if (option === "SHIRT") {
-            const shirt = document.getElementById("shirt");
-            shirt.style.backgroundImage = selected;
-            shirt.style.backgroundSize = "contain";
-            shirt.style.backgroundRepeat = "no-repeat";
-            shirt.style.backgroundPosition = "center";
+            const shirt = document.getElementById("shirt").firstChild;
+            shirt.src = selected;
         } else if (option === "PANTS") {
-            const pants = document.getElementById("pants");
-            pants.style.backgroundImage = selected;
-            pants.style.backgroundSize = "contain";
-            pants.style.backgroundRepeat = "no-repeat";
-            pants.style.backgroundPosition = "center";
+            const pants = document.getElementById("pants").firstChild;
+            pants.src = selected;
         }
     }
 
     return (
         <div className="generator-container">
-            <div id="avatar">
-                <div id="hat"></div>
-                <div id="color"></div>
-                <div id="shirt"></div>
-                <div id="pants"></div>
+            <div id="avatar" style={{
+                "backgroundImage": `url(${pixelBackground1.src})`,
+                "backgroundSize": "cover",
+                "backgroundRepeat": "no-repeat",
+                "backgroundPosition": "center"
+            }}>
+                <div id="hat">
+                    <img />
+                </div>
+                <div id="color">
+                    <img src={monkes[0].src}/>
+                </div>
+                <div id="shirt">
+                    <img />
+                </div>
+                <div id="pants">
+                    <img />
+                </div>
             </div>
             <div className="avatar-options-select">
                 <div className='selected' onClick={e => setSelection(e, "COLOR")}>
@@ -112,7 +105,7 @@ export default function AvatarGenerator() {
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center'
                             }}
-                            onClick={e => changeAvatar(e)}
+                            onClick={e => changeAvatar(e, photo.src)}
                         >
 
                         </div>
