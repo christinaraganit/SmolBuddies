@@ -20,6 +20,7 @@ export default function Header() {
         <div className="header-links">
           <a href="#">About</a>
           <a href="#">FAQ</a>
+          <a href="#">Merch</a>
           <a href="#">Minecraft</a>
           <a href="#">Discord</a>
           <a href="#">Twitter</a>
@@ -40,10 +41,13 @@ export default function Header() {
 
         <a href="#">About</a>
         <a href="#">FAQ</a>
+        <a href="#">Merch</a>
         <a href="#">Minecraft</a>
         <a href="#">Discord</a>
         <a href="#">Twitter</a>
-        <PixelButton text="connect"></PixelButton>
+        <div className="connect-button">
+          <button className="pixel-box--light">CONNECT</button>
+        </div>
       </div>
     </div>
   );
